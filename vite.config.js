@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/landing-page/',
+  base: '/Landing-Page/',
   plugins: [vue()],
   build: {
     outDir: 'build',
