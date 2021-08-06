@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vite",
-    "build": "vite build"
+    "build": "vite build && git subtree push --prefix build origin gh-pages"
   },
   "dependencies": {
     "@bcwdev/auth0provider-client": "0.0.7",
