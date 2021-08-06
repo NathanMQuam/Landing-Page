@@ -33,7 +33,7 @@
           </router-link>
         </li>
       </ul>
-      <span class="navbar-text">
+      <!-- <span class="navbar-text">
         <button
           class="btn btn-outline-primary text-uppercase"
           @click="login"
@@ -73,13 +73,13 @@
             </div>
           </div>
         </div>
-      </span>
+      </span> -->
     </div>
   </nav>
 </template>
 
 <script>
-import { AuthService } from '../services/AuthService'
+// import { AuthService } from '../services/AuthService'
 import { AppState } from '../AppState'
 import { computed, reactive } from 'vue'
 export default {
@@ -91,10 +91,10 @@ export default {
       state,
       user: computed(() => AppState.user),
       async login() {
-        AuthService.loginWithPopup()
+        // AuthService.loginWithPopup()
       },
       async logout() {
-        AuthService.logout({ returnTo: window.location.origin })
+        // AuthService.logout({ returnTo: window.location.origin })
       }
     }
   }
