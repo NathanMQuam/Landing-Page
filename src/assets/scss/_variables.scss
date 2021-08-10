@@ -1,8 +1,8 @@
-$body-bg: #e5e5e5;
+$body-bg: #505050;
 $primary: #3ba5dc;
-$secondary: #ff3697;
+$secondary: #37da45;
 $danger: #eb5757;
-$success: #27ae60;
+$success: #27ae64;
 $warning: #ff7f50;
 $info: #00c9bd;
 $dark: #313130;
@@ -12,17 +12,17 @@ $white: #fff;
 $light: #f8f9fa;
 
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "danger": $danger,
-  "success": $success,
-  "warning": $warning,
-  "info": $info,
-  "dark": $dark,
-  "grey": $grey,
-  "dark-grey": $dark-grey,
-  "white": $white,
-  "light": $light
+  'primary': $primary,
+  'secondary': $secondary,
+  'danger': $danger,
+  'success': $success,
+  'warning': $warning,
+  'info': $info,
+  'dark': $dark,
+  'grey': $grey,
+  'dark-grey': $dark-grey,
+  'white': $white,
+  'light': $light
 );
 
 $color-ranges: (
@@ -34,5 +34,5 @@ $color-ranges: (
   25: 25,
   30: 30,
   35: 35,
-  40: 40,
+  40: 40
 );

@@ -1,11 +1,11 @@
-@import "./_variables.scss";
-@import "bootstrap";
-@import "./_transitions.scss";
-@import "./_utilities.scss";
-@import "./_overrides.scss";
+@import './_variables.scss';
+@import 'bootstrap';
+@import './_transitions.scss';
+@import './_utilities.scss';
+@import './_overrides.scss';
 
 :root {
-  --grey: #f6f6f6;
+  --grey: #cbcbcb;
 }
 
 #app {

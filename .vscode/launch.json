@@ -9,6 +9,12 @@
             "name": "Start Client",
             "request": "launch",
             "type": "node-terminal"
+        },
+        {
+            "command": "npm run build",
+            "name": "Build to gh-pages",
+            "request": "launch",
+            "type": "node-terminal"
         }
     ]
 }
