@@ -9,7 +9,7 @@
     </div>
     <div class="row">
       <div class="hero-banner col-12">
-        <img src="https://picsum.photos/800/300" class="img-fluid w-100">
+        <img src="https://picsum.photos/2000/500" class="img-fluid w-100">
       </div>
     </div>
     <div class="row">
@@ -23,7 +23,7 @@
           </p>
         </div>
         <!-- TODO: Convert row into a v-for component -->
-        <div class="row bg-dark no-gutters">
+        <div class="row highlighted-project bg-dark no-gutters">
           <div class="col-5 p-4">
             <div class="row flex-column h-100">
               <div class="col-auto mb-2 project-type">
@@ -33,15 +33,17 @@
                 <h3>Title</h3>
               </div>
               <div class="col-auto project-description">
-                Description
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor natus eaque dolores numquam! Dolorem aliquid aspernatur suscipit, corporis minus quae consectetur quos totam quo, vitae sit rerum tenetur dignissimos.
               </div>
               <div class="col-auto mt-auto project-link">
-                Project link
+                View Project ->
               </div>
             </div>
           </div>
           <div class="col">
-            <img src="https://picsum.photos/400" class="highlighted-project-hero">
+            <!-- The background image is in an inline-style attribute for when this row is converted to a vue component -->
+            <div class="highlighted-project-hero" style="background-image: url('https://picsum.photos/800');">
+            </div>
           </div>
         </div>
       </div>
@@ -65,9 +67,14 @@ export default {
   }
 }
 
+.highlighted-project {
+  min-height: 35vh;
+}
+
 .highlighted-project-hero {
-  max-height: 40vh;
   width: 100%;
+  height:100%;
+  background-size: cover;
   object-fit: cover;
 }
 
