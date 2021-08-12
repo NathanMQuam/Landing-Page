@@ -12,7 +12,13 @@
         },
         {
             "command": "npm run build",
-            "name": "Build to gh-pages",
+            "name": "Build",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm run pushBuild",
+            "name": "Push Build",
             "request": "launch",
             "type": "node-terminal"
         }
