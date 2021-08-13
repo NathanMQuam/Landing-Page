@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vite",
-    "build": "vite build && git commit -m \"automatic build commit\"",
+    "build": "vite build && git add build/* && git commit -m \"automatic build commit\"",
     "pushBuild": "git push -u origin main && git subtree push --prefix build origin gh-pages"
   },
   "dependencies": {

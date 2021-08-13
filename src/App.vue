@@ -5,10 +5,8 @@
   <main class="text-light">
     <router-view />
   </main>
-  <footer class="mt-4">
-    <div class="bg-dark text-light text-center p-4 mt-auto">
-      Made with 💖 by CodeWorks
-    </div>
+  <footer>
+    <Footer />
   </footer>
 </template>
 

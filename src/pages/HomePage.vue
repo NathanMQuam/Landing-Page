@@ -32,7 +32,7 @@
               <div class="col-auto project-title">
                 <h3>Title</h3>
               </div>
-              <div class="col-auto project-description">
+              <div class="col-auto project-description mb-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor natus eaque dolores numquam! Dolorem aliquid aspernatur suscipit, corporis minus quae consectetur quos totam quo, vitae sit rerum tenetur dignissimos.
               </div>
               <div class="col-auto mt-auto project-link">
@@ -46,6 +46,7 @@
             </div>
           </div>
         </div>
+        <!--  -->
       </div>
     </div>
   </div>
