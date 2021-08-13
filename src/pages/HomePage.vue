@@ -12,6 +12,7 @@
         <img src="https://picsum.photos/2000/500" class="img-fluid w-100">
       </div>
     </div>
+    <!-- TODO: Skills section with major coding languages and tools -->
     <div class="row">
       <div class="col-10 offset-1 text-left">
         <div>
@@ -47,6 +48,7 @@
           </div>
         </div>
         <!--  -->
+        <!-- TODO: Contact form -->
       </div>
     </div>
   </div>
