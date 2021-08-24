@@ -24,30 +24,6 @@
           </p>
         </div>
         <!-- TODO: Convert row into a v-for component -->
-        <div class="row highlighted-project bg-dark no-gutters">
-          <div class="col-5 p-4">
-            <div class="row flex-column h-100">
-              <div class="col-auto mb-2 project-type">
-                <small>Web Design</small>
-              </div>
-              <div class="col-auto project-title">
-                <h3>Title</h3>
-              </div>
-              <div class="col-auto project-description mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor natus eaque dolores numquam! Dolorem aliquid aspernatur suscipit, corporis minus quae consectetur quos totam quo, vitae sit rerum tenetur dignissimos.
-              </div>
-              <div class="col-auto mt-auto project-link">
-                View Project ->
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <!-- The background image is in an inline-style attribute for when this row is converted to a vue component -->
-            <div class="highlighted-project-hero" style="background-image: url('https://picsum.photos/800');">
-            </div>
-          </div>
-        </div>
-        <!--  -->
         <!-- TODO: Contact form -->
       </div>
     </div>
@@ -55,8 +31,18 @@
 </template>
 
 <script>
+import { computed, reactive } from '@vue/runtime-core'
+import { AppState } from '../AppState.js'
 export default {
-  name: 'Home'
+  name: 'Home',
+  setup() {
+    const state = reactive({
+      projects: computed(() => AppState.projects)
+    })
+    return {
+      state
+    }
+  }
 }
 </script>
 
@@ -71,7 +57,7 @@ export default {
 }
 
 .highlighted-project {
-  min-height: 35vh;
+  min-height: 30vh;
 }
 
 .highlighted-project-hero {
