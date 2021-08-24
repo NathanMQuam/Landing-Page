@@ -37,7 +37,7 @@ export default {
   name: 'Home',
   setup() {
     const state = reactive({
-      projects: computed(() => AppState.projects)
+      projects: computed(() => AppState.projects.filter(project => project.isFeatured))
     })
     return {
       state
