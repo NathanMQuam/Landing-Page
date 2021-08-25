@@ -24,6 +24,13 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
+
+.hero-image {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
 .highlighted-project {
   min-height: 30vh;
 }

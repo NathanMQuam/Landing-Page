@@ -20,6 +20,11 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: loadPage('ProjectsPage')
+  },
+  {
+    path: '/projectDetails',
+    name: 'ProjectDetailsPage',
+    component: loadPage('ProjectDetailsPage')
   }
   // ,
   // {

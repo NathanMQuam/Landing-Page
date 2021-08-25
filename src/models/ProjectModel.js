@@ -9,5 +9,6 @@ export class Project {
     this.shortDescription = data.shortDescription || 'MISSING Short Description'
     this.description = data.description || 'MISSING Long Description'
     this.skillsUsed = data.skillsUsed || ['MISSING', 'Skills Used', 'JavaScript']
+    this.projectLink = data.projectLink || '/#/'
   }
 }

@@ -9,7 +9,7 @@
     </div>
     <div class="row">
       <div class="hero-banner col-12">
-        <img src="https://picsum.photos/2000/500" class="img-fluid w-100">
+        <img src="https://picsum.photos/2000/500" class="hero-image img-fluid w-100">
       </div>
     </div>
     <!-- TODO: Skills section with major coding languages and tools -->
@@ -54,32 +54,5 @@ export default {
     height: 200px;
     width: 200px;
   }
-}
-
-.highlighted-project {
-  min-height: 30vh;
-}
-
-.highlighted-project-hero {
-  width: 100%;
-  height:100%;
-  background-size: cover;
-  object-fit: cover;
-}
-
-.project-type {
-  opacity: 60%;
-}
-
-.project-title {
-
-}
-
-.project-description {
-  opacity: 90%;
-}
-
-.project-link {
-  opacity: 90%;
 }
 </style>

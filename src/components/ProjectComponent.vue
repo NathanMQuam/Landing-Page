@@ -12,8 +12,7 @@
           {{ project.shortDescription }}
         </div>
         <div class="col-auto mt-auto project-link">
-          <!-- TODO: Change to specific project page -->
-          <router-link :to="{name: 'Projects'}">
+          <router-link :to="{name: 'ProjectDetailsPage', params: {projectId: project.id}}">
             View Project ->
           </router-link>
         </div>
@@ -35,5 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.highlighted-project-hero {
+  background-position: center;
+}
 </style>
