@@ -9,7 +9,7 @@
           <h3>{{ project.projectName }}</h3>
         </div>
         <div class="col-auto project-description mb-3">
-          {{ project.description }}
+          {{ project.shortDescription }}
         </div>
         <div class="col-auto mt-auto project-link">
           <!-- TODO: Change to specific project page -->
