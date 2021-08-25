@@ -20,9 +20,7 @@
       </div>
     </div>
     <div class="col">
-      <!-- The background image is in an inline-style attribute for when this row is converted to a vue component -->
-      <!-- TODO: Project image -->
-      <div class="highlighted-project-hero" style="background-image: url('https://picsum.photos/800');">
+      <div class="highlighted-project-hero" :style="`background-image: url('${project.heroImage}');`">
       </div>
     </div>
   </div>
