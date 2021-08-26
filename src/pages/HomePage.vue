@@ -23,7 +23,7 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis maiores culpa esse consequuntur quibusdam adipisci numquam assumenda corporis minus itaque quaerat praesentium dicta aspernatur laborum, ea deserunt dolore laudantium laboriosam!
           </p>
         </div>
-        <!-- TODO: Convert row into a v-for component -->
+        <ProjectComponent v-for="project in state.projects" :key="project.id" :project="project" />
         <!-- TODO: Contact form -->
       </div>
     </div>

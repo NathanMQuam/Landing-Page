@@ -8,42 +8,26 @@
       </div>
       <div class="row">
         <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          This is my personal website for showcasing my skills and projects. Here are some of my highlights:
         </div>
       </div>
       <div class="row justify-content-center">
-        <!-- TODO: Convert these placeholder links into links to the highlighted projects -->
         <!-- TODO: Add a link to a list of all of my projects -->
-        <b class="col-auto mx-2 px-2">
-          <a href="#" class="text-light">
-            Project 1
-          </a>
-        </b>
-        <b class="col-auto mx-2 px-2">
-          <a href="#" class="text-light">
-            Project 2
-          </a>
-        </b>
-        <b class="col-auto mx-2 px-2">
-          <a href="#" class="text-light">
-            Project 3
-          </a>
-        </b>
-        <b class="col-auto mx-2 px-2">
-          <a href="#" class="text-light">
-            Project 4
-          </a>
+        <b class="col-auto mx-2 px-2" v-for="project in state.projects" :key="project.id">
+          <router-link class="text-light" :to="{name: 'ProjectDetailsPage', params: {projectId: project.id}}">
+            {{ project.projectName }}
+          </router-link>
         </b>
       </div>
       <div class="row mt-3 justify-content-center">
-        <a class="col-auto mx-2 px-2" href="#">
+        <a class="col-auto mx-2 px-2" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-q-9baaa3132/">
           <i class="fab fa-linkedin text-light"></i>
         </a>
-        <a class="col-auto mx-2 px-2" href="#">
-          <i class="fab fa-twitter text-light"></i>
-        </a>
-        <a class="col-auto mx-2 px-2" href="#">
+        <a class="col-auto mx-2 px-2" title="My GitHub" href="https://github.com/NathanMQuam">
           <i class="fab fa-github text-light"></i>
+        </a>
+        <a class="col-auto mx-2 px-2" title="My Résumé" href="https://github.com/NathanMQuam/nathan-quam-career/blob/main/Nathan%20M%20Quam%20-%20Resume.pdf">
+          <i class="fas fa-file text-light" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -51,10 +35,18 @@
 </template>
 
 <script>
+import { reactive } from '@vue/reactivity'
+import { computed } from '@vue/runtime-core'
+import { AppState } from '../AppState.js'
 export default {
   name: 'Footer',
   setup() {
-    return {}
+    const state = reactive({
+      projects: computed(() => AppState.projects.filter(p => p.isFeatured))
+    })
+    return {
+      state
+    }
   },
   components: {}
 }
