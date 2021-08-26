@@ -25,7 +25,13 @@ const routes = [
     path: '/projectDetails',
     name: 'ProjectDetailsPage',
     component: loadPage('ProjectDetailsPage')
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: loadPage('ContactPage')
   }
+
   // ,
   // {
   //   path: '/account',
