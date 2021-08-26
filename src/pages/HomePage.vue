@@ -2,7 +2,7 @@
   <div class="home">
     <div class="row">
       <div class="col-10 offset-1">
-        <h1 class="my-5 text-light text-left">
+        <h1 class="mt-5 mb-4 text-light text-left">
           <span class="text-white">Nathan Quam's Portfolio</span>
         </h1>
       </div>
@@ -19,18 +19,14 @@
       </div>
     </div>
     <div class="row mt-4">
-      <div class="col-10 offset-1 no-gutters">
+      <div class="col-10 offset-1">
         <div class="row">
-          <h2>My Top Skills</h2>
-        </div>
-        <div class="row no-gutters">
-          <div class="skill-box col-2 p-2" v-for="skill in state.skills" :key="skill.id">
-            <div class="h-100 w-100 d-flex flex-column justify-content-center">
-              <div class="flex-grow-1 skill-img" :style="`background-image: url(${skill.image});`">
-              </div>
-              <div>{{ skill.name }}</div>
-            </div>
+          <div class="col text-left">
+            <h2>My Top Skills</h2>
           </div>
+        </div>
+        <div class="row">
+          <Skill class="skill-box col-2 p-2" v-for="skill in state.skills" :key="skill.id" :skill="skill" />
         </div>
       </div>
     </div>
@@ -41,7 +37,7 @@
             Highlighted Projects
           </h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis maiores culpa esse consequuntur quibusdam adipisci numquam assumenda corporis minus itaque quaerat praesentium dicta aspernatur laborum, ea deserunt dolore laudantium laboriosam!
+            These are some of my more recent or noteworthy projects that showcase some of my skills.
           </p>
         </div>
         <ProjectComponent v-for="project in state.projects" :key="project.id" :project="project" />
