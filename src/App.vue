@@ -31,6 +31,23 @@ export default {
   background-position: center;
 }
 
+.skill-box {
+  min-height: 15vh;
+  max-height: 15vh;
+  > div {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.skill-img {
+  max-height: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .highlighted-project {
   min-height: 30vh;
 }
