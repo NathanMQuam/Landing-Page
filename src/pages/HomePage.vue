@@ -6,11 +6,26 @@
           <span class="text-white">Nathan Quam's Portfolio</span>
         </h1>
       </div>
-      <div class="col-10 offset-1 mb-4">
+      <div class="col-10 offset-1">
         <div class="m-0 p-0 text-left">
           Hi there! My name is <b>Nathan Quam</b>, and I am a programmer. I love learning, and my list of skills and experiences is ever growing. I recently graduated from <b><a href="https://boisecodeworks.com/" class="text-light">Boise CodeWorks</a></b>, and I'm currently looking to work as a web application developer!
-          <!-- TODO: Add something here about contacting me with the contact form below -->
         </div>
+      </div>
+      <!-- <div class="col-12 text-center mt-3">
+        <h2 class="small-h2">
+          Links
+        </h2>
+      </div> -->
+      <div class="col-10 offset-1 my-4 d-flex justify-content-center">
+        <a class="col-auto mx-2 px-2 text-light" title="My Résumé" href="https://github.com/NathanMQuam/nathan-quam-career/blob/main/Nathan%20M%20Quam%20-%20Resume.pdf">
+          <i class="fas fa-file text-light" aria-hidden="true"></i> My Résumé
+        </a>
+        <a class="col-auto mx-2 px-2 text-light" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-q-9baaa3132/">
+          <i class="fab fa-linkedin text-light" aria-hidden="true"></i> My LinkedIn
+        </a>
+        <a class="col-auto mx-2 px-2 text-light" title="My GitHub" href="https://github.com/NathanMQuam">
+          <i class="fab fa-github text-light" aria-hidden="true"></i> My GitHub
+        </a>
       </div>
     </div>
     <div class="row">
@@ -25,9 +40,7 @@
             <h2>My Top Skills</h2>
           </div>
         </div>
-        <div class="row">
-          <Skill class="skill-box col-2 p-2" v-for="skill in state.skills" :key="skill.id" :skill="skill" />
-        </div>
+        <SkillsList class="row" />
       </div>
     </div>
     <div class="row">
@@ -43,10 +56,8 @@
         <ProjectComponent v-for="project in state.projects" :key="project.id" :project="project" />
       </div>
     </div>
-    <div class="row">
-      <div class="col-10 offset-1">
-        <!-- TODO: Contact form -->
-      </div>
+    <div class="row mt-5">
+      <ContactForm class="col-10 offset-1" />
     </div>
   </div>
 </template>
@@ -58,8 +69,7 @@ export default {
   name: 'Home',
   setup() {
     const state = reactive({
-      projects: computed(() => AppState.projects.filter(project => project.isFeatured)),
-      skills: computed(() => AppState.skills.filter(s => s.image !== ''))
+      projects: computed(() => AppState.projects.filter(project => project.isFeatured))
     })
     return {
       state
@@ -76,5 +86,9 @@ export default {
     height: 200px;
     width: 200px;
   }
+}
+
+.small-h2 {
+  font-size: 1.5em;
 }
 </style>

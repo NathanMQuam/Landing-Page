@@ -10,5 +10,6 @@ export class Project {
     this.description = data.description || 'MISSING Long Description'
     this.skillsUsed = data.skillsUsed || ['MISSING', 'Skills Used', 'JavaScript']
     this.projectLink = data.projectLink || '/#/'
+    this.sourceLink = data.sourceLink || 'https://github.com/NathanMQuam'
   }
 }

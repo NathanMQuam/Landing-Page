@@ -1,32 +1,50 @@
 <template>
-  <div class="projectDetailsPage w-100">
+  <div class="projectDetailsPage w-100 text-left">
     <div class="row">
-      <div class="col-10 offset-1">
-        <h1 class="my-5 text-light text-left">
-          <span class="text-white">{{ state.activeProject.projectName }}</span>
-        </h1>
+      <div class="col-6 offset-1">
+        <a :href="state.activeProject.projectLink" title="View the live project">
+          <h1 class="my-5 text-light text-left">
+            <span class="text-white">{{ state.activeProject.projectName }}</span>
+          </h1>
+        </a>
+      </div>
+      <div class="col-4 d-flex align-content-center justify-content-end">
+        <a :href="state.activeProject.sourceLink" class="my-auto text-light">View this project on GitHub -></a>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="hero-banner col-12">
+        <div class="text-center w-100">
+          <img :src="state.activeProject.heroImage" class="hero-image">
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="hero-banner col-12">
-        <div :style="`background-image: url(${state.activeProject.heroImage});`" class="hero-image w-100">
-        </div>
+      <div class="col-10 offset-1 project-type">
+        {{ state.activeProject.type }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 offset-1">
+        Skills used:
+        <span class="p-2" v-for="skill in state.activeProject.skillsUsed" :key="skill">
+          {{ skill }}
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 offset-1 mb-4">
+        <a :href="state.activeProject.projectLink" :title="state.activeProject.projectName">View the live project -></a>
       </div>
     </div>
     <div class="row">
       <div class="col-10 offset-1 my-3 text-left">
         <p>{{ state.activeProject.description }}</p>
       </div>
-      <div class="col-10 offset-1 mb-3">
-        Skills used:<br />
-        <span class="p-2" v-for="skill in state.activeProject.skillsUsed" :key="skill">
-          {{ skill }}
-        </span>
-      </div>
     </div>
     <div class="row bg-dark justify-content-center">
       <div class="col-4 no-gutters" v-for="image in state.activeProject.images" :key="image">
-        <img :src="image" class="projectImage img-fluid">
+        <img :src="image" class="project-image img-fluid">
       </div>
     </div>
   </div>
@@ -47,7 +65,7 @@ export default {
       activeProject: computed(() => AppState.activeProject)
     })
     onMounted(() => {
-      AppState.activeProject = new Project(AppState.projects.find(p => p.id === route.params.projectId))
+      AppState.activeProject = computed(() => new Project(AppState.projects.find(p => p.id === route.params.id)))
     })
     return {
       state
@@ -67,9 +85,13 @@ export default {
   }
 }
 
-.projectImage {
+.project-image {
   height: 100%;
   max-height: 35vh;
   max-width: 100%;
+}
+
+.hero-image {
+  height: 50vh;
 }
 </style>

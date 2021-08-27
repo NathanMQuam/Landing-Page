@@ -14,7 +14,7 @@
       <div class="row justify-content-center">
         <!-- TODO: Add a link to a list of all of my projects -->
         <b class="col-auto mx-2 px-2" v-for="project in state.projects" :key="project.id">
-          <router-link class="text-light" :to="{name: 'ProjectDetailsPage', params: {projectId: project.id}}">
+          <router-link class="text-light" :to="{name: 'ProjectDetailsPage', params: {id: project.id}}">
             {{ project.projectName }}
           </router-link>
         </b>

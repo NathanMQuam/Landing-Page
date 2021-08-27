@@ -12,6 +12,13 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-10 offset-1">
+        <a class="text-light" title="My Résumé" href="https://github.com/NathanMQuam/nathan-quam-career/blob/main/Nathan%20M%20Quam%20-%20Resume.pdf">
+          <i class="link-icon fas fa-file" aria-hidden="true"></i> My Résumé
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 

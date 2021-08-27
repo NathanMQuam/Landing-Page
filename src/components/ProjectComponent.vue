@@ -12,7 +12,7 @@
           {{ project.shortDescription }}
         </div>
         <div class="col-auto mt-auto project-link">
-          <router-link :to="{name: 'ProjectDetailsPage', params: {projectId: project.id}}">
+          <router-link :to="{name: 'ProjectDetailsPage', params: {id: project.id}}">
             View Project ->
           </router-link>
         </div>

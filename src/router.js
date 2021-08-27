@@ -22,7 +22,7 @@ const routes = [
     component: loadPage('ProjectsPage')
   },
   {
-    path: '/projectDetails',
+    path: '/projectDetails/:id',
     name: 'ProjectDetailsPage',
     component: loadPage('ProjectDetailsPage')
   },
