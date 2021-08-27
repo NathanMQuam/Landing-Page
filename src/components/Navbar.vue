@@ -2,11 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img
-          alt="logo"
-          src="../assets/img/cw-logo.png"
-          height="45"
-        />
+        <span><b>Nathan Quam's</b> Portfolio</span>
       </div>
     </router-link>
     <button
@@ -27,14 +23,19 @@
             Home
           </router-link>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <router-link :to="{ name: 'About' }" class="nav-link">
             About
           </router-link>
-        </li> -->
+        </li>
         <li class="nav-item">
           <router-link :to="{ name: 'Projects' }" class="nav-link">
             Projects
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'Contact' }" class="nav-link btn btn-outline-primary">
+            Contact Me
           </router-link>
         </li>
       </ul>
@@ -127,5 +128,14 @@ a:hover {
 }
 .nav-item .nav-link.router-link-exact-active{
   color: var(--primary);
+}
+
+.navbar-brand {
+  user-select: none;
+}
+
+.contact-button {
+  border-radius: 5px;
+  outline: 1px blue solid;
 }
 </style>
