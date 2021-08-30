@@ -42,7 +42,7 @@
         <p>{{ state.activeProject.description }}</p>
       </div>
     </div>
-    <div class="row bg-dark justify-content-center">
+    <div class="row bg-dark justify-content-center" v-if="state.activeProject.images[0] != ''">
       <div class="col-4 no-gutters" v-for="image in state.activeProject.images" :key="image">
         <img :src="image" class="project-image img-fluid">
       </div>

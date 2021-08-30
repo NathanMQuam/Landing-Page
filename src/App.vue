@@ -26,9 +26,11 @@ export default {
 @import "./assets/scss/main.scss";
 
 .hero-image {
-  height: 30vh;
+  height: 35vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-image: url('./assets/img/penrose-nebula.jpg');
 }
 
 .skill-box {

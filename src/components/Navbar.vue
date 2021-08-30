@@ -2,7 +2,10 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <span><b>Nathan Quam's</b> Portfolio</span>
+        <span>
+          <img src="../assets/img/NathanQuam-Signature-White.png" class="nav-icon mr-2">
+          <b>Nathan Quam's</b> Portfolio
+        </span>
       </div>
     </router-link>
     <button
@@ -103,6 +106,11 @@ export default {
 </script>
 
 <style scoped>
+.nav-icon {
+  max-height: 10vh;
+  height: 2.5em;
+}
+
 .dropdown-menu {
   user-select: none;
   display: block;

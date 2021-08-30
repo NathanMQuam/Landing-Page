@@ -12,8 +12,8 @@ export const AppState = reactive({
     projectName: 'Prompetition',
     isFeatured: true,
     type: 'Web Application',
-    heroImage: 'https://picsum.photos/id/0/800/600',
-    images: ['https://picsum.photos/id/1/400/300', 'https://picsum.photos/id/10/400/300'],
+    heroImage: '../src/assets/img/Prompetition-Front-Page.jpg',
+    images: [''],
     shortDescription: 'My capstone project during my time at Boise CodeWorks. It\'s a competitive creative writing web application.',
     description: `This is Prompetition, a competitive creative writing application. There is one writing prompt that everyone can see, and everyone can submit their written work once. During that day, a user can only see their own submission. The next day everyone can vote on yesterday's entries for the one they like the most. At the end of that day, a winner is permanently decided, and this is displayed on their account profile.\n
     At any point afterwards, users can still enter submissions to previous writing prompts, but these post-contest submissions are only for artistic writing, there will not be a new winner. But, users can still "like" these post-contest submissions, and the highest scoring submission is put on display underneath the contest-period winner.\n
