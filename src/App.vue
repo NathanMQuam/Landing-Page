@@ -30,7 +30,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url('./assets/img/penrose-nebula.jpg');
+  background-image: url('https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/penrose-nebula.jpg');
 }
 
 .skill-box {

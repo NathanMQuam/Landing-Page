@@ -2,11 +2,14 @@
   <div class="projectDetailsPage w-100 text-left">
     <div class="row">
       <div class="col-6 offset-1">
-        <a :href="state.activeProject.projectLink" title="View the live project">
-          <h1 class="my-5 text-light text-left">
+        <h1 class="my-5 text-light text-left">
+          <a v-if="state.activeProject.projectLink" :href="state.activeProject.projectLink" title="View the live project">
             <span class="text-white">{{ state.activeProject.projectName }}</span>
-          </h1>
-        </a>
+          </a>
+          <a v-else :href="state.activeProject.sourceLink" title="View the source code">
+            <span class="text-white">{{ state.activeProject.projectName }}</span>
+          </a>
+        </h1>
       </div>
       <div class="col-4 d-flex align-content-center justify-content-end">
         <a :href="state.activeProject.sourceLink" class="my-auto text-light">View this project on GitHub -></a>
@@ -34,7 +37,8 @@
     </div>
     <div class="row">
       <div class="col-10 offset-1 mb-4">
-        <a :href="state.activeProject.projectLink" :title="state.activeProject.projectName">View the live project -></a>
+        <a v-if="state.activeProject.projectLink" :href="state.activeProject.projectLink" :title="state.activeProject.projectName">View the live project -></a>
+        <a v-else :href="state.activeProject.sourceLink" title="View the source code">This application is not currently live</a>
       </div>
     </div>
     <div class="row">
