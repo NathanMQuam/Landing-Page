@@ -26,7 +26,7 @@ export const AppState = reactive({
     projectName: 'Bug Log',
     isFeatured: true,
     type: 'Web Application',
-    heroImage: 'https://github.com/NathanMQuam/Landing-Page/blob/main/src/assets/img/Bug-Log-Hero.jpg',
+    heroImage: 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/Bug-Log-Hero.jpg',
     images: ['https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/Bug-Log.jpg', 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/Open-Bug.jpg', 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/My-Bug.jpg'],
     shortDescription: 'A standard web application for tracking bugs.',
     description: 'Open a bug and give it a title and description to start tracking. Comment on a bug to note suggestions or it\'s current status. Close bugs to mark them as resolved.',
