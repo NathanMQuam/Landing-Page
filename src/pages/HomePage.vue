@@ -15,7 +15,7 @@
         <a class="col-auto mx-2 px-2 text-light" title="My Résumé" href="https://github.com/NathanMQuam/nathan-quam-career/blob/main/Nathan%20M%20Quam%20-%20Resume.pdf">
           <i class="fas fa-file text-light" aria-hidden="true"></i> My Résumé
         </a>
-        <a class="col-auto mx-2 px-2 text-light" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-q-9baaa3132/">
+        <a class="col-auto mx-2 px-2 text-light" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-quam/">
           <i class="fab fa-linkedin text-light" aria-hidden="true"></i> My LinkedIn
         </a>
         <a class="col-auto mx-2 px-2 text-light" title="My GitHub" href="https://github.com/NathanMQuam">

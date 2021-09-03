@@ -20,7 +20,7 @@
         </b>
       </div>
       <div class="row mt-3 justify-content-center">
-        <a class="col-auto mx-2 px-2" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-q-9baaa3132/">
+        <a class="col-auto mx-2 px-2" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-quam/">
           <i class="fab fa-linkedin text-light"></i>
         </a>
         <a class="col-auto mx-2 px-2" title="My GitHub" href="https://github.com/NathanMQuam">

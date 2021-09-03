@@ -7,7 +7,7 @@ s<template>
         </h1>
         <ul class="list-group mt-4">
           <li class="list-unstyled">
-            <a class="text-light" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-q-9baaa3132/">
+            <a class="text-light" title="My LinkedIn" href="https://www.linkedin.com/in/nathan-quam/">
               <div class="h-100">
                 <i class="link-icon fab fa-linkedin" aria-hidden="true"></i> LinkedIn
               </div>
