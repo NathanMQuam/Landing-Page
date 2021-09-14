@@ -38,7 +38,7 @@ export const AppState = reactive({
     isFeatured: true,
     type: 'Web Application',
     heroImage: 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRamp.png',
-    images: [''],
+    images: ['https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRamp.png'],
     shortDescription: 'A visual tool for estimating which ramp model would be best for your truck\'s bed height.',
     description: 'A visual tool for estimating which ramp model would be best for your truck\'s bed height. Simply enter in your bed height, and the tool recommends one of the two available models. You can then preview what the angle or slope of the ramp will be for your bed height on level ground. You can also toggle the preview between the two models to compare them.',
     skillsUsed: ['HTML', 'CSS', 'JavaScript', 'HTML 5 Canvas'],
