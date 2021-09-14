@@ -17,9 +17,9 @@
     </div>
     <div class="row mb-4">
       <div class="hero-banner col-12">
-        <div class="text-center w-100">
-          <img :src="state.activeProject.heroImage" class="hero-image">
-        </div>
+        <a class="text-center w-100" :href="state.activeProject.projectLink">
+          <img :src="state.activeProject.heroImage" class="hero-image my-auto">
+        </a>
       </div>
     </div>
     <div class="row">
