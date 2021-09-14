@@ -1,5 +1,5 @@
 <template>
-  <div class="projectComponent row highlighted-project bg-dark no-gutters mb-4">
+  <router-link :to="{name: 'ProjectDetailsPage', params: {id: project.id}}" class="projectComponent row highlighted-project bg-dark no-gutters mb-4">
     <div class="col-5 p-4">
       <div class="row flex-column h-100">
         <div class="col-auto mb-2 project-type">
@@ -22,7 +22,7 @@
       <div class="highlighted-project-hero" :style="`background-image: url('${project.heroImage}');`">
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -36,5 +36,13 @@ export default {
 <style lang="scss" scoped>
 .highlighted-project-hero {
   background-position: center;
+}
+.projectComponent {
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 0.5em;
+}
+.projectComponent:hover {
+  color: #fff;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0.5em;
 }
 </style>

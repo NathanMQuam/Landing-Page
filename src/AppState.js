@@ -32,6 +32,18 @@ export const AppState = reactive({
     description: 'Open a bug and give it a title and description to start tracking. Comment on a bug to note suggestions or it\'s current status. Close bugs to mark them as resolved.',
     skillsUsed: ['HTML', 'CSS', 'JavaScript', 'Vue 3', 'Mongo DB', 'Node JS', 'OAuth'],
     sourceLink: 'https://github.com/NathanMQuam/Bug-Log'
+  }), new Project({
+    id: 'step-ramp-tool',
+    projectName: 'Step Ramp Tool',
+    isFeatured: true,
+    type: 'Web Application',
+    heroImage: 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRamp.png',
+    images: [''],
+    shortDescription: 'A visual tool for estimating which ramp model would be best for your truck\'s bed height.',
+    description: 'A visual tool for estimating which ramp model would be best for your truck\'s bed height. Simply enter in your bed height, and the tool recommends one of the two available models. You can then preview what the angle or slope of the ramp will be for your bed height on level ground. You can also toggle the preview between the two models to compare them.',
+    skillsUsed: ['HTML', 'CSS', 'JavaScript', 'HTML 5 Canvas'],
+    sourceLink: 'https://github.com/NathanMQuam/StepRampTool',
+    projectLink: 'https://nathanmquam.github.io/StepRampTool/'
   })],
   skills: [
     new Skill({ name: 'HTML 5', image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' }),
