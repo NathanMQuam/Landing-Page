@@ -44,6 +44,18 @@ export const AppState = reactive({
     skillsUsed: ['HTML', 'CSS', 'JavaScript', 'HTML 5 Canvas'],
     sourceLink: 'https://github.com/NathanMQuam/StepRampTool',
     projectLink: 'https://nathanmquam.github.io/StepRampTool/'
+  }), new Project({
+    id: 'gregs-vue-list',
+    projectName: 'GregsList',
+    isFeatured: false,
+    type: 'Web Application',
+    heroImage: 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/GregsList-Home.png',
+    images: ['https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/GregsList-Cars.jpg'],
+    shortDescription: 'One of my applications I made at CodeWorks for learning how to GET, POST, PUT, and DELETE from a REST-compliant API.',
+    description: 'This was a graded application made to loosely resemble CraigsList. Utilizing GET, POST, PUT, and DELETE with a RESTful API, the application allows users to create listings for cars, jobs, or houses, and to edit or bid on these listings.',
+    skillsUsed: ['HTML', 'CSS', 'JavaScript', 'Vue 3', 'Mongo DB', 'Node JS'],
+    sourceLink: 'https://github.com/NathanMQuam/gregs-vue-list',
+    projectLink: 'https://nathanmquam.github.io/gregs-vue-list/#/'
   })],
   skills: [
     new Skill({ name: 'HTML 5', image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' }),
