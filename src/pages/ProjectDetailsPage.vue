@@ -2,7 +2,7 @@
   <div class="projectDetailsPage w-100 text-left">
     <div class="row">
       <div class="col-6 offset-1">
-        <h1 class="my-5 text-light text-left">
+        <h1 class="my-4 text-light text-left">
           <a v-if="state.activeProject.projectLink" :href="state.activeProject.projectLink" title="View the live project">
             <span class="text-white">{{ state.activeProject.projectName }}</span>
           </a>
@@ -43,7 +43,7 @@
     </div>
     <div class="row">
       <div class="col-10 offset-1 my-3 text-left">
-        <p>{{ state.activeProject.description }}</p>
+        <div v-html="state.activeProject.description"></div>
       </div>
     </div>
     <div class="row bg-dark justify-content-center" v-if="state.activeProject.images[0] != ''">

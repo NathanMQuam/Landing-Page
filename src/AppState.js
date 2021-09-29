@@ -38,9 +38,14 @@ export const AppState = reactive({
     isFeatured: true,
     type: 'Web Application',
     heroImage: 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRamp.png',
-    images: ['https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRamp.png'],
+    images: ['https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRamp.png', 'https://raw.githubusercontent.com/NathanMQuam/Landing-Page/main/src/assets/img/StepRampEstimator.jpg'],
     shortDescription: 'A visual tool for estimating which ramp model would be best for your truck\'s bed height.',
-    description: 'A visual tool for estimating which ramp model would be best for your truck\'s bed height. Simply enter in your bed height, and the tool recommends one of the two available models. You can then preview what the angle or slope of the ramp will be for your bed height on level ground. You can also toggle the preview between the two models to compare them.',
+    description: `
+      <p>The Step Ramp company sells two models of ramps with steps on the side for loading motorcycles into the bed of a truck or trailer. One model is about 12 inches longer than the other, and both ramp models have a recommended loading height range.</p>
+      <p>They asked me to create an embedable tool to visualize the ramp's angle for a given bed height, and what that angle would look like with each of the two models.</p>
+      <p>Utilizing HTML 5 Canvas and JavaScript, I created this tool to meet that need. Initially I tried to use JavaScript to position and rotate HTML elements, but it quickly became apparent that that was not the best way to do this. I then decided to look into using HTML canvas, which suited the application very well.</p>
+      <p>Once the app was complete, I sent the files over to Step Ramp. They put it up on a test PHP page, did some minimal styling to make it match the rest of their website, and put it up live for anyone to use.</p>
+    `,
     skillsUsed: ['HTML', 'CSS', 'JavaScript', 'HTML 5 Canvas'],
     sourceLink: 'https://github.com/NathanMQuam/StepRampTool',
     projectLink: 'https://nathanmquam.github.io/StepRampTool/'
